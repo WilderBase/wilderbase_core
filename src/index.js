@@ -1,3 +1,8 @@
+/*
+ *  This code is under MIT licence, you can find the complete file here:
+ *  https://github.com/WilderBase/wilderbase_core/blob/master/LICENSE
+*/
+
 document.getElementById("AppCaption").innerHTML = "My App Caption"
 document.getElementById("Header").innerHTML = "My Header"
 document.getElementById("Sign").innerHTML = "My Sign"
