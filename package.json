@@ -4,7 +4,8 @@
   "description": "Wilderbase Platform Core",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/WilderBase/wilderbase_core#readme",
   "dependencies": {
+    "autoprefixer": "^6.7.7",
     "bootstrap": "^4.0.0",
+    "html-webpack-plugin": "^2.30.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "sqlite3": "^3.1.13"
   }
 }
