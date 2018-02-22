@@ -1,7 +1,7 @@
 /*
  *  This code is under MIT licence, you can find the complete file here:
  *  https://github.com/WilderBase/wilderbase_core/blob/master/LICENSE
-*/
+ */
 
 var wb_base_engine = exports;
 
@@ -41,9 +41,9 @@ var https_options = {
 };
 
 /*
-Class:            WBBaseEngine
-Description:      Drive the usage of a Wilderbase server
-*/
+ *  Class:            WBBaseEngine
+ *  Description:      Drive the usage of a Wilderbase server
+ */
 
 wb_base_engine.WBBaseEngine = WBBaseEngine;
 
@@ -299,9 +299,9 @@ function functionWssOnConnection_ActionAsync(connectionIdIn, messageOutObject) {
 }
 
 /*
-Class:            WBDataStore
-Description:      Persistent data storage and retrieval facility
-*/
+ *  Class:            WBDataStore
+ *  Description:      Persistent data storage and retrieval facility
+ */
 
 function WBDataStore() {
     this.appsByMnemonic = {};
@@ -317,9 +317,9 @@ function WBDataStore() {
 }
 
 /*
-Class:            WBAppController
-Description:      Drive the usage of a Wilderbase application
-*/
+ *  Class:            WBAppController
+ *  Description:      Drive the usage of a Wilderbase application
+ */
 
 function WBAppController(appId) {
     this.appId = appId;
@@ -362,9 +362,9 @@ WBAppController.prototype.serveConnection = function(connectionId, fSynchronous,
 }
 
 /*
-Class:            WBAppSession
-Description:      Drive the use of an App session
-*/
+ *  Class:            WBAppSession
+ *  Description:      Drive the use of an App session
+ */
 
 function WBAppSession(sessionId) {
     this.sessionId = sessionId;
@@ -446,9 +446,9 @@ WBAppSession.prototype.evoke = function(wbAppController, function_ActionAsync, p
 }
 
 /*
-Class:            WBStack
-Description:      Drive the use of an execution thread in a session
-*/
+ *  Class:            WBStack
+ *  Description:      Drive the use of an execution thread in a session
+ */
 
 function WBStack(stackId) {
     this.stackId = stackId;
@@ -546,9 +546,9 @@ WBStack.prototype.processRequest = function(wbAppController, function_ActionAsyn
 }
 
 /*
-Class:            WBStackFrame
-Description:      Drive one node in the call tree of thread execution
-*/
+ *  Class:            WBStackFrame
+ *  Description:      Drive one node in the call tree of thread execution
+ */
 
 function WBStackFrame(stackFrameId) {
     this.stackFrameId = stackFrameId;
@@ -688,36 +688,36 @@ WBStackFrame.prototype.processRequest = function(wbAppController, function_Actio
 }
 
 /*
-Class:            WBContext
-Description:      Specifies the context that determines what data must be projected
-*/
+ *  Class:            WBContext
+ *  Description:      Specifies the context that determines what data must be projected
+ */
 
 function WBContext() {
     
 }
 
 /*
-Class:            WBProjection
-Description:      Data projected on a collection
-*/
+ *  Class:            WBProjection
+ *  Description:      Data projected on a collection
+ */
 
 function WBProjection() {
     
 }
 
 /*
-Class:            WBRow
-Description:      An item in a collection
-*/
+ *  Class:            WBRow
+ *  Description:      An item in a collection
+ */
 
 function WBRow() {
     
 }
 
 /*
-Class:            WBCell
-Description:      An element in an item
-*/
+ *  Class:            WBCell
+ *  Description:      An element in an item
+ */
 
 function WBCell() {
     

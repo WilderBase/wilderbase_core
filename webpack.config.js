@@ -1,7 +1,7 @@
 /*
  *  This code is under MIT licence, you can find the complete file here:
  *  https://github.com/WilderBase/wilderbase_core/blob/master/LICENSE
-*/
+ */
 
 const path = require('path');
 const autoprefixer = require('autoprefixer');
@@ -20,6 +20,7 @@ module.exports = {
 	},
 	entry: [
 		path.resolve('src/index.js'),
+		path.resolve('src/wb_interface.js')
 	],
 	output: {
 		path: path.resolve('build'),
